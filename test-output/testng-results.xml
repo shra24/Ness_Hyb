@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30652" started-at="2018-09-20T06:05:27Z" finished-at="2018-09-20T06:05:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30652" started-at="2018-09-20T06:05:27Z" finished-at="2018-09-20T06:05:57Z">
+      <class name="com.dra3.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dra3.testcases.LoginPageTest@7d9d1a19]" name="setUp" is-config="true" duration-ms="10452" started-at="2018-09-20T06:05:27Z" finished-at="2018-09-20T06:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="PageTitleTest()[pri:0, instance:com.dra3.testcases.LoginPageTest@7d9d1a19]" name="PageTitleTest" duration-ms="31" started-at="2018-09-20T06:05:37Z" finished-at="2018-09-20T06:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dra3.testcases.LoginPageTest@7d9d1a19]" name="tearDown" is-config="true" duration-ms="2582" started-at="2018-09-20T06:05:37Z" finished-at="2018-09-20T06:05:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dra3.testcases.LoginPageTest@7d9d1a19]" name="setUp" is-config="true" duration-ms="14683" started-at="2018-09-20T06:05:40Z" finished-at="2018-09-20T06:05:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="dra3logoTest()[pri:0, instance:com.dra3.testcases.LoginPageTest@7d9d1a19]" name="dra3logoTest" duration-ms="5" started-at="2018-09-20T06:05:54Z" finished-at="2018-09-20T06:05:54Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'INAIRDT541600', ip: '172.21.74.82', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'INAIRDT541600', ip: '172.21.74.82', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+at com.dra3.pages.LoginPage.validatedra3logo(LoginPage.java:58)
+at com.dra3.testcases.LoginPageTest.dra3logoTest(LoginPageTest.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dra3logoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dra3.testcases.LoginPageTest@7d9d1a19]" name="tearDown" is-config="true" duration-ms="2878" started-at="2018-09-20T06:05:54Z" finished-at="2018-09-20T06:05:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.dra3.testcases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
